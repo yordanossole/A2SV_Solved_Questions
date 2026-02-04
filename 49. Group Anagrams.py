@@ -1,4 +1,5 @@
-from collections import Counter, defaultdict
+# leetcode
+from collections import defaultdict
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         group = defaultdict(list)
