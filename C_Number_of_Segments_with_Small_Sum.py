@@ -10,6 +10,6 @@ for right in range(n):
         cur_sum -= nums[left]
         left += 1
     
-    counter += right - left + 1
+    counter += right - left + 1 # we will have window size + 1 sub-arrays
 
 print(counter)
