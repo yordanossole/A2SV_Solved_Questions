@@ -7,14 +7,18 @@
 
 class Solution:
     def deleteNode(self, node):
-        cur = node
-        while cur.next.next:
-            nxt = cur.next
-            cur.val = nxt.val
-            cur = cur.next
-        nxt = cur.next
-        cur.val = nxt.val
-        cur.next = None
+        # cur = node
+        # while cur.next.next:
+        #     nxt = cur.next
+        #     cur.val = nxt.val
+        #     cur = cur.next
+        # nxt = cur.next
+        # cur.val = nxt.val
+        # cur.next = None
+
+        # with out loop
+        node.val = node.next.val
+        node.next = node.next.next
 
         """
         :type node: ListNode
